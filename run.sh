@@ -28,7 +28,7 @@ ubuntu_setup () {
 OS="`uname`"
 case $OS in
   'Linux')
-    #ubuntu_setup
+    ubuntu_setup
     ;;
   *) echo "Unsupported OS $OSTYPE" ; exit 1; ;;
 esac || exit $?

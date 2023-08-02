@@ -44,9 +44,6 @@ do
     esac
 done
 
-# unzip the binaries
-unzip ./esbmc_binary.zip
-
 # Run the test suite
 printf "Run python script:"
 if [ $WITH_LIBRARY = "FALSE" ]

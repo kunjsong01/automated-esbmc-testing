@@ -5,11 +5,11 @@ on:
       benchmark:
         description: 'Benchmark to run (e.g. any benchmark as in esbmc-cpp/<benchmark>)'
         required: true
-        default: 'esbmc-cpp/script_timeout_test/'
+        default: './esbmc-cpp/script_timeout_test/'
       binary:
         description: 'ESBMC binary'
         required: true
-        default: 'esbmc_binary/latest_master/esbmc'
+        default: './esbmc_binary/latest_master/esbmc'
       mode:
         description: 'Mode'
         required: true
@@ -37,4 +37,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run benchmark with the given binary
         continue-on-error: true
-        run: pwd && ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}
+        run: pwd && unzip esbmc_binary.zip && ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}

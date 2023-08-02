@@ -37,4 +37,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run benchmark with the given binary
         continue-on-error: true
-        run: pwd && ls && jar xvf /home/runner/work/automated-esbmc-testing/automated-esbmc-testing/esbmc_binary.zip && ls && ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}
+        run: pwd && ls && 7z x /home/runner/work/automated-esbmc-testing/automated-esbmc-testing/esbmc_binary.zip && ls && ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}

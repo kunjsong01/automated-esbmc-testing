@@ -1,23 +1,23 @@
-name: Run a Benchmark
+name: Run Benchmark with specific binary
 on:
   workflow_dispatch:
     inputs:
-      timeout:
-        description: 'Timeout for each test case (in seconds)'
-        required: true
-        default: '300'
-      options:
-        description: 'Command-line flags to pass via ESBMC_OPTS'
-        required: false
-        default: '-I /__w/esbmc/esbmc/src/cpp/library'
       benchmark:
         description: 'Benchmark to run (e.g. any benchmark as in regression/<benchmark>)'
         required: true
         default: 'esbmc-cpp/cpp'
-      logdirectory:
-        description: 'Log directory'
+      binary:
+        description: 'ESBMC binary'
         required: true
-        default: 'benchmark_logs'
+        default: 'esbmc_binary/latest_master/esbmc'
+      mode:
+        description: 'Mode'
+        required: true
+        default: 'CORE'
+      library:
+        description: 'C++ OM lib (leave blank for new ESBMC binary)'
+        required: false
+        default: '-l ./libraries'
 
 jobs:
   build-linux:
@@ -26,28 +26,16 @@ jobs:
         os: [ubuntu-latest]
     name: Build ESBMC (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 720 # 12h
+    timeout-minutes: 90 # 1.5h
     steps:
       - name: Confirm the benchmark
         run: echo ${{ github.event.inputs.benchmark }}
-      - uses: actions/checkout@v2
-      - name: Build ESBMC
-        env:
-          TEST_TIMEOUT: ${{ inputs.timeout }}
-          BENCHMARK_TO_RUN: ${{ inputs.benchmark }}
-          LOG_DIR: ${{ inputs.logdirectory }}
-        run: ./scripts/build.sh -b Release -r On
-      - uses: actions/upload-artifact@v1
-        with:
-          name: release-linux
-          path: ./build/src/esbmc/esbmc
-      - name: Run user-specified benchmark
+      - name: Confirm the binary
+        run: echo ${{ github.event.inputs.binary }}
+      - name: Confirm the mode
+        run: echo ${{ github.event.inputs.mode }}
+      - name: Run benchmark with the given binary
         continue-on-error: true
         env:
           ESBMC_OPTS: ${{ inputs.options }}
-          LOG_DIR: ${{ inputs.logdirectory }}
-        run: cd build/ && ctest -j4 --output-on-failure --progress .
-      - uses: actions/upload-artifact@v2
-        with:
-          name: benchmark-logs
-          path: ./build/regression/${{ inputs.logdirectory }}
+        run: ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}

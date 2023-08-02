@@ -37,4 +37,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run benchmark with the given binary
         continue-on-error: true
-        run: ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}
+        run: pwd && ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}

@@ -16,7 +16,7 @@ WITH_LIBRARY="FALSE"
 ubuntu_setup () {
     # Tested on ubuntu 22.04
     echo "Configuring Ubuntu build"
-    sudo apt-get update && sudo apt-get install -y clang clang-tidy python-is-python3 csmith python3 git ccache unzip wget curl libcsmith-dev gperf libgmp-dev cmake bison flex gcc-multilib linux-libc-dev libboost-all-dev ninja-build python3-setuptools libtinfo-dev pkg-config python3-pip python3-toml python-is-python3 openjdk-11-jdk &&
+    sudo apt-get update && sudo apt-get install -y clang clang-tidy python-is-python3 csmith python3 git ccache unzip wget curl libcsmith-dev gperf libgmp-dev cmake bison flex gcc-multilib linux-libc-dev libboost-all-dev ninja-build python3-setuptools libtinfo-dev pkg-config python3-pip python3-toml python-is-python3 openjdk-11-jdk fastjar &&
     # Hack: Boolector might fail to download some dependencies using curl (maybe we should patch it?)
     # curl: (60) SSL: no alternative certificate subject name matches target host name 'codeload.github.com'
     # As a unsafe workaround... we can just tell curl to be unsafe

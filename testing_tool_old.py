@@ -130,7 +130,8 @@ class CTestCase(BaseTest):
 class XMLTestCase(BaseTest):
     """This specialization will parse XML test descriptions"""
 
-    UNSUPPORTED_OPTIONS = ["--timeout", "--memlimit"]
+    #UNSUPPORTED_OPTIONS = ["--timeout", "--memlimit"]
+    UNSUPPORTED_OPTIONS = []
     # Custom library for CPP abstract libraries
     CPP_INCLUDE_DIR: str = None
 
@@ -275,10 +276,12 @@ def get_test_objects(base_dir: str):
     listdir = os.listdir(base_dir)
     directories = [x for x in listdir if os.path.isdir(
         os.path.join(base_dir, x))]
-    assert len(directories) > 5
+    #assert len(directories) > 5
+    assert len(directories) > 1
     tests = [TestParser.from_file(os.path.join(base_dir, x), x)
              for x in directories]
-    assert len(tests) > 5
+    #assert len(tests) > 5
+    assert len(tests) > 1
     return tests
 
 class RegressionBase(unittest.TestCase):

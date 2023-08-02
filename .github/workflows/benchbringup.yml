@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       benchmark:
-        description: 'Benchmark to run (e.g. any benchmark as in regression/<benchmark>)'
+        description: 'Benchmark to run (e.g. any benchmark as in esbmc-cpp/<benchmark>)'
         required: true
-        default: 'esbmc-cpp/cpp'
+        default: 'esbmc-cpp/script_timeout_test/'
       binary:
         description: 'ESBMC binary'
         required: true

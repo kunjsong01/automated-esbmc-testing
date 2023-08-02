@@ -24,7 +24,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-    name: Build ESBMC (${{ matrix.os }})
+    name: Run benchmark (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 90 # 1.5h
     steps:
@@ -34,8 +34,7 @@ jobs:
         run: echo ${{ github.event.inputs.binary }}
       - name: Confirm the mode
         run: echo ${{ github.event.inputs.mode }}
+      - uses: actions/checkout@v2
       - name: Run benchmark with the given binary
         continue-on-error: true
-        env:
-          ESBMC_OPTS: ${{ inputs.options }}
         run: ./run.sh -r ${{ inputs.benchmark }} -t ${{ inputs.binary }} -m ${{ inputs.mode }} ${{ inputs.library }}

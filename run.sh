@@ -10,9 +10,7 @@ TOOL_ARGS="--tool"
 MODE_ARGS="--mode"
 LIBRARY_ARGS="--library"
 
-TRUE=1
-FALSE=0
-WITH_LIBRARY=FALSE
+WITH_LIBRARY="FALSE"
 
 # Ubuntu setup (pre-config)
 ubuntu_setup () {
@@ -30,7 +28,7 @@ ubuntu_setup () {
 OS="`uname`"
 case $OS in
   'Linux')
-    ubuntu_setup
+    #ubuntu_setup
     ;;
   *) echo "Unsupported OS $OSTYPE" ; exit 1; ;;
 esac || exit $?
@@ -42,8 +40,7 @@ do
         r) REGRESSION_ARGS="$REGRESSION_ARGS ${OPTARG}";;
         t) TOOL_ARGS="$TOOL_ARGS ${OPTARG}";;
         m) MODE_ARGS="$MODE_ARGS ${OPTARG}";;
-        l) LIBRARY_ARGS="$LIBRARY_ARGS ${OPTARG}"
-           WITH_LIBRARY=TRUE;;
+        l) LIBRARY_ARGS="$LIBRARY_ARGS ${OPTARG}" && WITH_LIBRARY="TRUE";;
     esac
 done
 
@@ -52,7 +49,7 @@ unzip ./esbmc_binary.zip
 
 # Run the test suite
 printf "Run python script:"
-if [ $WITH_LIBRARY -eq 1]
+if [ $WITH_LIBRARY = "FALSE" ]
 then
   printf " '%s'" testing_tool_old.py $REGRESSION_ARGS $TOOL_ARGS $MODE_ARGS
   # Run test suite with the given arguments

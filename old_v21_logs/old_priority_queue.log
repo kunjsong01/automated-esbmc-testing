@@ -1,0 +1,36 @@
+test_ch21_12 (__main__.RegressionBase) ... ok
+test_priority_queue_constructor (__main__.RegressionBase) ... ok
+test_priority_queue_constructor-2 (__main__.RegressionBase) ... ok
+test_priority_queue_constructor_bug (__main__.RegressionBase) ... ok
+test_priority_queue_constructor_bug-2 (__main__.RegressionBase) ... ok
+test_priority_queue_empty (__main__.RegressionBase) ... ok
+test_priority_queue_empty_bug (__main__.RegressionBase) ... ok
+test_priority_queue_pop (__main__.RegressionBase) ... ok
+test_priority_queue_pop_bug (__main__.RegressionBase) ... ok
+test_priority_queue_push (__main__.RegressionBase) ... ok
+test_priority_queue_push_bug (__main__.RegressionBase) ... ok
+test_priority_queue_size (__main__.RegressionBase) ... ok
+test_priority_queue_size_bug (__main__.RegressionBase) ... ok
+test_priority_queue_top (__main__.RegressionBase) ... ok
+test_priority_queue_top_bug (__main__.RegressionBase) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 397.725s
+
+OK
+Found 15 test cases
+32.740
+27.058
+18.026
+26.855
+18.281
+21.667
+66.219
+27.098
+27.112
+27.084
+27.268
+20.364
+20.404
+18.818
+18.725

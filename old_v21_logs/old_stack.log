@@ -1,0 +1,84 @@
+test_stack_class (__main__.RegressionBase) ... FAIL
+test_stack_class_bug (__main__.RegressionBase) ... FAIL
+test_stack_constructor (__main__.RegressionBase) ... ok
+test_stack_constructor_bug (__main__.RegressionBase) ... ok
+test_stack_empty (__main__.RegressionBase) ... ok
+test_stack_empty_bug (__main__.RegressionBase) ... ok
+test_stack_pop (__main__.RegressionBase) ... ok
+test_stack_pop_bug (__main__.RegressionBase) ... ok
+test_stack_push (__main__.RegressionBase) ... ok
+test_stack_push_bug (__main__.RegressionBase) ... ok
+test_stack_size (__main__.RegressionBase) ... ok
+test_stack_size_bug (__main__.RegressionBase) ... ok
+test_stack_top (__main__.RegressionBase) ... ok
+test_stack_top_bug (__main__.RegressionBase) ... ok
+
+======================================================================
+FAIL: test_stack_class (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/stack/stack_class
+EXPECTED TO FIND: ['^VERIFICATION SUCCESSFUL$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/stack/stack_class/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/stack/stack_class/main.cpp
+Generating GOTO Program
+GOTO program creation time: 60.213s
+GOTO program processing time: 4.988s
+Starting Bounded Model Checking
+failed
+No solver specified; defaulting to Boolector
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/stack/stack_class/main.cpp', '--unwind', '1', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_stack_class_bug (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/stack/stack_class_bug
+EXPECTED TO FIND: ['^VERIFICATION FAILED$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/stack/stack_class_bug/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/stack/stack_class_bug/main.cpp
+Generating GOTO Program
+GOTO program creation time: 48.030s
+GOTO program processing time: 3.076s
+Starting Bounded Model Checking
+failed
+No solver specified; defaulting to Boolector
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/stack/stack_class_bug/main.cpp', '--unwind', '1', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+----------------------------------------------------------------------
+Ran 14 tests in 424.749s
+
+FAILED (failures=2)
+Found 14 test cases
+66.511
+52.335
+31.033
+30.671
+25.762
+26.482
+25.530
+25.575
+24.331
+24.275
+22.948
+23.185
+22.952
+23.069

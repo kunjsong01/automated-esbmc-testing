@@ -1,0 +1,2164 @@
+test_map_begin (__main__.RegressionBase) ... ok
+test_map_begin_bug (__main__.RegressionBase) ... ok
+test_map_clear (__main__.RegressionBase) ... ok
+test_map_clear_bug (__main__.RegressionBase) ... ok
+test_map_constructor (__main__.RegressionBase) ... FAIL
+test_map_constructor_bug (__main__.RegressionBase) ... ok
+test_map_count (__main__.RegressionBase) ... ok
+test_map_count_bug (__main__.RegressionBase) ... ok
+test_map_empty (__main__.RegressionBase) ... ok
+test_map_empty_bug (__main__.RegressionBase) ... ok
+test_map_end (__main__.RegressionBase) ... ok
+test_map_end_bug (__main__.RegressionBase) ... ok
+test_map_equal_range (__main__.RegressionBase) ... ok
+test_map_erase (__main__.RegressionBase) ... ok
+test_map_erase_bug (__main__.RegressionBase) ... ok
+test_map_find (__main__.RegressionBase) ... ok
+test_map_find_bug (__main__.RegressionBase) ... ok
+test_map_insert1 (__main__.RegressionBase) ... ok
+test_map_insert1_bug (__main__.RegressionBase) ... ok
+test_map_insert2 (__main__.RegressionBase) ... ok
+test_map_insert2_bug (__main__.RegressionBase) ... ok
+test_map_insert3 (__main__.RegressionBase) ... ok
+test_map_insert3_bug (__main__.RegressionBase) ... ok
+test_map_key_comp (__main__.RegressionBase) ... ok
+test_map_key_comp_bug (__main__.RegressionBase) ... ok
+test_map_maxsize (__main__.RegressionBase) ... ok
+test_map_operator_assign (__main__.RegressionBase) ... ok
+test_map_operator_assign_bug (__main__.RegressionBase) ... ok
+test_map_operator_brackets (__main__.RegressionBase) ... FAIL
+test_map_operator_brackets_bug (__main__.RegressionBase) ... FAIL
+test_map_rbegin (__main__.RegressionBase) ... ok
+test_map_rbegin_bug (__main__.RegressionBase) ... ok
+test_map_rend (__main__.RegressionBase) ... ok
+test_map_rend_bug (__main__.RegressionBase) ... ok
+test_map_size (__main__.RegressionBase) ... ok
+test_map_size_bug (__main__.RegressionBase) ... ok
+test_map_string_class (__main__.RegressionBase) ... FAIL
+test_map_string_class-2 (__main__.RegressionBase) ... FAIL
+test_map_string_class-2_bug (__main__.RegressionBase) ... FAIL
+test_map_string_class-3 (__main__.RegressionBase) ... FAIL
+test_map_string_class-3_bug (__main__.RegressionBase) ... FAIL
+test_map_swap (__main__.RegressionBase) ... ok
+test_map_swap_bug (__main__.RegressionBase) ... ok
+test_map_upper_lower_bound (__main__.RegressionBase) ... ok
+test_map_upper_lower_bound_bug (__main__.RegressionBase) ... ok
+test_map_value_comp (__main__.RegressionBase) ... ok
+test_map_value_comp_bug (__main__.RegressionBase) ... ok
+
+======================================================================
+FAIL: test_map_constructor (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_constructor
+EXPECTED TO FIND: ['^VERIFICATION SUCCESSFUL$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_constructor/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_constructor/main.cpp
+Generating GOTO Program
+GOTO program creation time: 3.276s
+GOTO program processing time: 0.616s
+Starting Bounded Model Checking
+Unwinding loop 31 iteration 1 file /home/kunjian/library/map line 885
+Unwinding loop 31 iteration 2 file /home/kunjian/library/map line 885
+Unwinding loop 31 iteration 3 file /home/kunjian/library/map line 885
+Unwinding loop 31 iteration 4 file /home/kunjian/library/map line 885
+Unwinding loop 31 iteration 5 file /home/kunjian/library/map line 885
+Unwinding loop 32 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 33 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 32 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 33 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 32 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 33 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 32 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 33 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 32 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 32 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 33 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 34 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 35 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 34 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 35 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 34 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 35 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 34 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 35 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 34 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 34 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 35 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 36 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 37 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 36 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 37 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 36 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 37 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 36 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 37 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 36 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 36 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 37 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 38 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 39 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 38 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 39 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 38 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 39 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 38 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 39 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 38 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 38 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 39 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 40 iteration 1 file /home/kunjian/library/map line 699
+Unwinding loop 40 iteration 2 file /home/kunjian/library/map line 699
+Unwinding loop 40 iteration 3 file /home/kunjian/library/map line 699
+Unwinding loop 40 iteration 4 file /home/kunjian/library/map line 699
+Unwinding loop 40 iteration 5 file /home/kunjian/library/map line 699
+Unwinding loop 41 iteration 1 file /home/kunjian/library/map line 885
+Unwinding loop 41 iteration 2 file /home/kunjian/library/map line 885
+Unwinding loop 41 iteration 3 file /home/kunjian/library/map line 885
+Unwinding loop 41 iteration 4 file /home/kunjian/library/map line 885
+Unwinding loop 41 iteration 5 file /home/kunjian/library/map line 885
+Unwinding loop 42 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 43 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 42 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 43 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 42 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 43 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 42 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 43 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 42 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 42 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 43 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 44 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 45 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 44 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 45 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 44 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 45 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 44 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 45 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 44 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 44 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 45 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 46 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 47 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 46 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 47 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 46 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 47 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 46 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 47 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 46 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 46 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 47 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 48 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 49 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 48 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 49 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 48 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 49 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 48 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 49 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 48 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 48 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 49 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 50 iteration 1 file /home/kunjian/library/map line 713
+Unwinding loop 50 iteration 2 file /home/kunjian/library/map line 713
+Unwinding loop 50 iteration 3 file /home/kunjian/library/map line 713
+Unwinding loop 50 iteration 4 file /home/kunjian/library/map line 713
+Unwinding loop 50 iteration 5 file /home/kunjian/library/map line 713
+Unwinding loop 51 iteration 1 file /home/kunjian/library/map line 885
+Unwinding loop 51 iteration 2 file /home/kunjian/library/map line 885
+Unwinding loop 51 iteration 3 file /home/kunjian/library/map line 885
+Unwinding loop 51 iteration 4 file /home/kunjian/library/map line 885
+Unwinding loop 51 iteration 5 file /home/kunjian/library/map line 885
+Unwinding loop 52 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 53 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 52 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 53 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 52 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 53 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 52 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 53 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 52 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 52 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 53 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 54 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 55 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 54 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 55 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 54 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 55 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 54 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 55 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 54 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 54 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 55 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 56 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 57 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 56 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 57 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 56 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 57 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 56 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 57 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 56 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 56 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 57 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 58 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 59 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 58 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 59 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 58 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 59 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 58 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 59 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 58 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 58 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 59 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 60 iteration 1 file /home/kunjian/library/map line 885
+Unwinding loop 60 iteration 2 file /home/kunjian/library/map line 885
+Unwinding loop 60 iteration 3 file /home/kunjian/library/map line 885
+Unwinding loop 60 iteration 4 file /home/kunjian/library/map line 885
+Unwinding loop 60 iteration 5 file /home/kunjian/library/map line 885
+Unwinding loop 61 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 62 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 61 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 62 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 61 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 62 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 61 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 62 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 61 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 61 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 62 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 63 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 64 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 63 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 64 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 63 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 64 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 63 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 64 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 63 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 63 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 64 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 65 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 66 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 65 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 66 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 65 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 66 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 65 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 66 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 65 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 65 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 66 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 67 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 68 iteration 1 file /home/kunjian/library/map line 729
+Unwinding loop 67 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 68 iteration 2 file /home/kunjian/library/map line 729
+Unwinding loop 67 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 68 iteration 3 file /home/kunjian/library/map line 729
+Unwinding loop 67 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 68 iteration 4 file /home/kunjian/library/map line 729
+Unwinding loop 67 iteration 1 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 2 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 3 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 4 file /home/kunjian/library/map line 740
+Unwinding loop 67 iteration 5 file /home/kunjian/library/map line 740
+Unwinding loop 68 iteration 5 file /home/kunjian/library/map line 729
+Unwinding loop 69 iteration 1 file /home/kunjian/library/map line 885
+Unwinding loop 69 iteration 2 file /home/kunjian/library/map line 885
+Unwinding loop 69 iteration 3 file /home/kunjian/library/map line 885
+Unwinding loop 69 iteration 4 file /home/kunjian/library/map line 885
+Unwinding loop 69 iteration 5 file /home/kunjian/library/map line 885
+Symex completed in: 15.316s
+size of program expression: 26485 assignments
+Slicing time: 18.034s
+Generated 8178 VCC(s), 982 remaining after simplification
+Encoding remaining VCC(s) using bit-vector arithmetic
+Encoding to solver time: 1.629s
+Solving with solver Boolector
+Runtime decision procedure: 0.157s
+Building error trace
+
+Counterexample:
+
+State 1 file /home/kunjian/library/map line 692 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 2 file /home/kunjian/library/map line 884 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 3 file /home/kunjian/library/map line 720 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::1::s=0 (0)
+
+State 4 file /home/kunjian/library/map line 722 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 5 file /home/kunjian/library/map line 723 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 6 file /home/kunjian/library/map line 725 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 10 file /home/kunjian/library/map line 726 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 11 file /home/kunjian/library/map line 727 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_operator[]$2=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0]
+
+State 68 file esbmc-cpp/map/map_constructor/main.cpp line 18 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 69 file esbmc-cpp/map/map_constructor/main.cpp line 18 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 70 file esbmc-cpp/map/map_constructor/main.cpp line 18 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 71 file esbmc-cpp/map/map_constructor/main.cpp line 18 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 72 file /home/kunjian/library/map line 720 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::1::s=1 (1)
+
+State 76 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char>less::operator()(const$this,char,char)::cpp::std::<char>less::operator()(const$this,char,char)::y=97 (97)
+
+State 77 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::$tmp::return_value_operator()$2=false
+
+State 123 file /home/kunjian/library/map line 758 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 127 file /home/kunjian/library/map line 759 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 131 file /home/kunjian/library/map line 761 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 135 file /home/kunjian/library/map line 762 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 136 file /home/kunjian/library/map line 763 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_operator[]$4=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[1]
+
+State 139 file esbmc-cpp/map/map_constructor/main.cpp line 19 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 140 file esbmc-cpp/map/map_constructor/main.cpp line 19 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 141 file esbmc-cpp/map/map_constructor/main.cpp line 19 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 142 file esbmc-cpp/map/map_constructor/main.cpp line 19 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 143 file /home/kunjian/library/map line 720 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::1::s=2 (2)
+
+State 147 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char>less::operator()(const$this,char,char)::cpp::std::<char>less::operator()(const$this,char,char)::y=97 (97)
+
+State 148 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::$tmp::return_value_operator()$2=false
+
+State 158 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char>less::operator()(const$this,char,char)::cpp::std::<char>less::operator()(const$this,char,char)::y=98 (98)
+
+State 159 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::$tmp::return_value_operator()$2=false
+
+State 196 file /home/kunjian/library/map line 758 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 200 file /home/kunjian/library/map line 759 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 204 file /home/kunjian/library/map line 761 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 208 file /home/kunjian/library/map line 762 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 209 file /home/kunjian/library/map line 763 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_operator[]$6=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[2]
+
+State 212 file esbmc-cpp/map/map_constructor/main.cpp line 20 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 213 file esbmc-cpp/map/map_constructor/main.cpp line 20 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 214 file esbmc-cpp/map/map_constructor/main.cpp line 20 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 215 file esbmc-cpp/map/map_constructor/main.cpp line 20 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 216 file /home/kunjian/library/map line 720 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::1::s=3 (3)
+
+State 220 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char>less::operator()(const$this,char,char)::cpp::std::<char>less::operator()(const$this,char,char)::y=97 (97)
+
+State 221 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::$tmp::return_value_operator()$2=false
+
+State 231 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char>less::operator()(const$this,char,char)::cpp::std::<char>less::operator()(const$this,char,char)::y=98 (98)
+
+State 232 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::$tmp::return_value_operator()$2=false
+
+State 242 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char>less::operator()(const$this,char,char)::cpp::std::<char>less::operator()(const$this,char,char)::y=99 (99)
+
+State 243 file /home/kunjian/library/functional line 243 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::$tmp::return_value_operator()$2=false
+
+State 271 file /home/kunjian/library/map line 758 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 275 file /home/kunjian/library/map line 759 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 279 file /home/kunjian/library/map line 761 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 283 file /home/kunjian/library/map line 762 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 284 file /home/kunjian/library/map line 763 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_operator[]$8=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[3]
+
+State 287 file esbmc-cpp/map/map_constructor/main.cpp line 21 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 288 file esbmc-cpp/map/map_constructor/main.cpp line 21 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 289 file esbmc-cpp/map/map_constructor/main.cpp line 21 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 290 file esbmc-cpp/map/map_constructor/main.cpp line 21 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 291 file /home/kunjian/library/utility line 23 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 292 file /home/kunjian/library/utility line 23 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 293 file /home/kunjian/library/map line 517 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=-1 }
+
+State 294 file /home/kunjian/library/map line 770 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=-1 }
+
+State 295 file /home/kunjian/library/map line 771 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=-1 }
+
+State 296 file /home/kunjian/library/map line 772 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 297 file /home/kunjian/library/map line 773 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=97,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 298 file /home/kunjian/library/map line 774 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::begin(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=97,
+    .cpp::std::<char,signed_int>pair::second=10 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 299 file /home/kunjian/library/map line 775 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_begin$9={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=97,
+    .cpp::std::<char,signed_int>pair::second=10 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 300 file /home/kunjian/library/utility line 23 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 301 file /home/kunjian/library/utility line 23 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 302 file /home/kunjian/library/map line 517 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=-1 }
+
+State 303 file /home/kunjian/library/map line 780 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value={ .pointer_object=nil, .pointer_offset=nil },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=-1 }
+
+State 304 file /home/kunjian/library/map line 781 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=-1 }
+
+State 305 file /home/kunjian/library/map line 782 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=4 }
+
+State 309 file /home/kunjian/library/map line 783 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=4 }
+
+State 313 file /home/kunjian/library/map line 784 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::end(this)::1::it={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=4 }
+
+State 314 file /home/kunjian/library/map line 785 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_end$10={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=4 }
+
+State 315 file /home/kunjian/library/map line 696 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::first={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=97,
+    .cpp::std::<char,signed_int>pair::second=10 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=0 }
+
+State 316 file /home/kunjian/library/map line 696 thread 0
+<main invocation>
+----------------------------------------------------
+  cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::last={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_key=&first@1!0,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_value=&first@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0],
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pair={ .cpp::std::<char,signed_int>pair::first=0,
+    .cpp::std::<char,signed_int>pair::second=0 },
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::iterator::it_pos=4 }
+
+State 317 file /home/kunjian/library/map line 697 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 318 file /home/kunjian/library/map line 698 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::1::limit=4 (4)
+
+State 319 file /home/kunjian/library/map line 699 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::1::i=0 (0)
+
+State 322 file /home/kunjian/library/map line 700 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 325 file /home/kunjian/library/map line 701 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 326 file /home/kunjian/library/map line 702 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 327 file /home/kunjian/library/map line 699 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::1::i=1 (1)
+
+State 330 file /home/kunjian/library/map line 700 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 333 file /home/kunjian/library/map line 701 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 334 file /home/kunjian/library/map line 702 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 335 file /home/kunjian/library/map line 699 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::1::i=2 (2)
+
+State 338 file /home/kunjian/library/map line 700 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 341 file /home/kunjian/library/map line 701 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=2 }
+
+State 342 file /home/kunjian/library/map line 702 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 343 file /home/kunjian/library/map line 699 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::1::i=3 (3)
+
+State 346 file /home/kunjian/library/map line 700 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 349 file /home/kunjian/library/map line 701 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=3 }
+
+State 350 file /home/kunjian/library/map line 702 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=4 }
+
+State 351 file /home/kunjian/library/map line 699 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::map(this,symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator),symbol(identifier=69_cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::tag.iterator))::1::i=4 (4)
+
+State 356 file /home/kunjian/library/map line 884 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 357 file /home/kunjian/library/map line 720 thread 0
+<main invocation>
+----------------------------------------------------
+  std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::operator[](this,ref_const_char)::1::s=0 (0)
+
+State 358 file /home/kunjian/library/map line 722 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=0 }
+
+State 359 file /home/kunjian/library/map line 723 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 360 file /home/kunjian/library/map line 725 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 364 file /home/kunjian/library/map line 726 thread 0
+<main invocation>
+----------------------------------------------------
+  main::c::main::1::second={ .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_key=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value=nil,
+    .cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_size=1 }
+
+State 365 file /home/kunjian/library/map line 727 thread 0
+<main invocation>
+----------------------------------------------------
+  c::main::$tmp::return_value_operator[]$12=&second@1!0.cpp::std::<char,signed_int,cpp::std::<char>tag.less>map::_value[0]
+
+State 422 file esbmc-cpp/map/map_constructor/main.cpp line 24 thread 0
+<main invocation>
+----------------------------------------------------
+Violated property:
+  file esbmc-cpp/map/map_constructor/main.cpp line 24
+  assertion
+  *return_value_operator[]$12 == 10
+
+VERIFICATION FAILED
+No solver specified; defaulting to Boolector
+No solver specified; defaulting to Boolector
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+Fetching array elements inside tuples currently unimplemented, sorry
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_constructor/main.cpp', '--unwind', '5', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_operator_brackets (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_operator_brackets
+EXPECTED TO FIND: ['^VERIFICATION SUCCESSFUL$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_operator_brackets/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_operator_brackets/main.cpp
+Generating GOTO Program
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_operator_brackets/main.cpp', '--unwind', '10', '--no-unwinding-assertions', '--ir', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_operator_brackets_bug (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_operator_brackets_bug
+EXPECTED TO FIND: ['^VERIFICATION FAILED$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_operator_brackets_bug/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_operator_brackets_bug/main.cpp
+Generating GOTO Program
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_operator_brackets_bug/main.cpp', '--unwind', '10', '--no-unwinding-assertions', '--ir', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_string_class (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_string_class
+EXPECTED TO FIND: ['^VERIFICATION SUCCESSFUL$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_string_class/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_string_class/main.cpp
+Generating GOTO Program
+GOTO program creation time: 3.209s
+GOTO program processing time: 1.525s
+Starting Bounded Model Checking
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 4 file /home/kunjian/library/cstring line 75
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 4 file /home/kunjian/library/cstring line 18
+No solver specified; defaulting to Boolector
+Unexpectedly array type'd argument to construct_struct_ref
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_string_class/main.cpp', '--unwind', '4', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_string_class-2 (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_string_class-2
+EXPECTED TO FIND: ['^VERIFICATION SUCCESSFUL$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_string_class-2/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_string_class-2/main.cpp
+Generating GOTO Program
+GOTO program creation time: 3.094s
+GOTO program processing time: 1.749s
+Starting Bounded Model Checking
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+No solver specified; defaulting to Boolector
+Unexpectedly array type'd argument to construct_struct_ref
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_string_class-2/main.cpp', '--unwind', '2', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_string_class-2_bug (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_string_class-2_bug
+EXPECTED TO FIND: ['^VERIFICATION FAILED$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_string_class-2_bug/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_string_class-2_bug/main.cpp
+Generating GOTO Program
+GOTO program creation time: 3.158s
+GOTO program processing time: 1.743s
+Starting Bounded Model Checking
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+No solver specified; defaulting to Boolector
+Unexpectedly array type'd argument to construct_struct_ref
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_string_class-2_bug/main.cpp', '--unwind', '2', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_string_class-3 (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_string_class-3
+EXPECTED TO FIND: ['^VERIFICATION SUCCESSFUL$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_string_class-3/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_string_class-3/main.cpp
+Generating GOTO Program
+GOTO program creation time: 3.075s
+GOTO program processing time: 2.134s
+Starting Bounded Model Checking
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+No solver specified; defaulting to Boolector
+Unexpectedly array type'd argument to construct_struct_ref
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_string_class-3/main.cpp', '--unwind', '3', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+======================================================================
+FAIL: test_map_string_class-3_bug (__main__.RegressionBase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "testing_tool_old.py", line 344, in test
+    self.fail(error_message_prefix + error_message)
+AssertionError: 
+TEST: esbmc-cpp/map/map_string_class-3_bug
+EXPECTED TO FIND: ['^VERIFICATION FAILED$']
+
+PROGRAM OUTPUT
+ESBMC version 2.1.0 64-bit x86_64 linux
+file esbmc-cpp/map/map_string_class-3_bug/main.cpp: Parsing
+Converting
+Type-checking esbmc-cpp/map/map_string_class-3_bug/main.cpp
+Generating GOTO Program
+GOTO program creation time: 3.228s
+GOTO program processing time: 2.115s
+Starting Bounded Model Checking
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 1 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 2 file /home/kunjian/library/cstring line 75
+Unwinding loop 7 iteration 3 file /home/kunjian/library/cstring line 75
+Unwinding loop 1 iteration 1 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 2 file /home/kunjian/library/cstring line 18
+Unwinding loop 1 iteration 3 file /home/kunjian/library/cstring line 18
+No solver specified; defaulting to Boolector
+Unexpectedly array type'd argument to construct_struct_ref
+
+
+ARGUMENTS: ['esbmc_binary/old_v21/esbmc', 'esbmc-cpp/map/map_string_class-3_bug/main.cpp', '--unwind', '3', '--no-unwinding-assertions', '--memlimit', '14000000', '--timeout', '900', '-I', '/home/kunjian/library']
+
+----------------------------------------------------------------------
+Ran 47 tests in 787.694s
+
+FAILED (failures=8)
+Found 47 test cases
+4.550
+4.614
+6.796
+6.595
+40.330
+41.970
+5.497
+5.501
+9.724
+9.471
+4.649
+4.766
+11.525
+54.439
+53.494
+47.468
+47.302
+6.856
+6.934
+5.649
+5.670
+22.006
+21.884
+4.414
+4.362
+2.548
+7.751
+7.797
+96.084
+71.975
+4.858
+4.809
+4.868
+4.899
+4.356
+4.447
+14.976
+10.004
+10.237
+12.836
+12.875
+13.934
+15.409
+18.725
+18.261
+4.548
+4.854

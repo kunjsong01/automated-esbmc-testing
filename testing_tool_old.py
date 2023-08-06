@@ -6,6 +6,7 @@ import os
 import sys
 import unittest
 from subprocess import Popen, PIPE, STDOUT
+import subprocess
 import argparse
 import re
 import xml.etree.ElementTree as ET
@@ -43,6 +44,14 @@ OLD_GOTO = False
 NEW_GOTO = False
 
 CTEST_CPP_INCLUDE: str = None
+
+# solvers
+USE_Z3 = False
+USE_MATHSAT = False
+USE_CVC = False
+USE_YICES = False
+USE_BITWUZLA = False
+USE_BOOLECTOR = False
 
 class BaseTest:
     """This class is responsible to:
@@ -119,6 +128,22 @@ class CTestCase(BaseTest):
             global NEW_GOTO
             if(NEW_GOTO):
                 self.test_args += " --goto-functions-only "
+
+            global USE_Z3
+            if(USE_Z3):
+                self.test_args += " --z3 "
+            global USE_MATHSAT
+            if(USE_MATHSAT):
+                self.test_args += " --mathsat "
+            global USE_CVC
+            if(USE_CVC):
+                self.test_args += " --cvc "
+            global USE_YICES
+            if(USE_YICES):
+                self.test_args += " --yices "
+            global USE_BITWUZLA
+            if(USE_BITWUZLA):
+                self.test_args += " --bitwuzla "
 
             # Fourth line and beyond
             # Regex of expected output
@@ -223,6 +248,22 @@ class XMLTestCase(BaseTest):
         if(NEW_GOTO):
             result.append('--goto-functions-only')
 
+        global USE_Z3
+        if(USE_Z3):
+            result.append('--z3')
+        global USE_MATHSAT
+        if(USE_MATHSAT):
+            result.append('--mathsat')
+        global USE_CVC
+        if(USE_CVC):
+            result.append('--cvc')
+        global USE_YICES
+        if(USE_YICES):
+            result.append('--yices')
+        global USE_BITWUZLA
+        if(USE_BITWUZLA):
+            result.append('--bitwuzla')
+
         return result
 
 
@@ -257,8 +298,10 @@ class Executor:
 
     def run(self, test_case: BaseTest):
         """Execute the test case with `executable`"""
-        process = Popen(test_case.generate_run_argument_list(*self.tool),
-                        stdout=PIPE, stderr=PIPE)
+        cmd = test_case.generate_run_argument_list(*self.tool)
+        #print("@@ {0}".format(cmd), flush=True)
+        '''
+        process = Popen(cmd, stdout=PIPE, stderr=PIPE)
         try:
             stdout, stderr = process.communicate(timeout=self.timeout)
         except:
@@ -268,6 +311,12 @@ class Executor:
             process.wait()
             return None, None
         return stdout, stderr
+        '''
+        try:
+            p = subprocess.run(cmd, stdout=PIPE, stderr=PIPE, timeout=self.timeout);
+        except subprocess.CalledProcessError:
+            return None, None
+        return p.stdout, p.stderr
 
 
 def get_test_objects(base_dir: str):
@@ -277,11 +326,11 @@ def get_test_objects(base_dir: str):
     directories = [x for x in listdir if os.path.isdir(
         os.path.join(base_dir, x))]
     #assert len(directories) > 5
-    assert len(directories) > 1
+    assert len(directories) >= 1
     tests = [TestParser.from_file(os.path.join(base_dir, x), x)
              for x in directories]
     #assert len(tests) > 5
-    assert len(tests) > 1
+    assert len(tests) >= 1
     return tests
 
 class RegressionBase(unittest.TestCase):
@@ -390,6 +439,12 @@ def _arg_parsing():
             help="old ESBMC show goto only")
     parser.add_argument("--newgoto", default=False, action="store_true",
             help="new ESBMC show goto only")
+    parser.add_argument("--z3", required=False, default=False, action="store_true", help="Use z3")
+    parser.add_argument("--mathsat", required=False, default=False, action="store_true", help="Use mathsat")
+    parser.add_argument("--cvc", required=False, default=False, action="store_true", help="Use cvc")
+    parser.add_argument("--yices", required=False, default=False, action="store_true", help="Use yices")
+    parser.add_argument("--bitwuzla", required=False, default=False, action="store_true", help="Use bitwuzla")
+    parser.add_argument("--boolector", required=False, default=False, action="store_true", help="Use boolector")
 
     main_args = parser.parse_args()
     if main_args.timeout:
@@ -415,15 +470,46 @@ def _arg_parsing():
     global CTEST_CPP_INCLUDE
     CTEST_CPP_INCLUDE = main_args.library
 
+    '''
+    print(main_args.z3)
+    print(main_args.mathsat)
+    print(main_args.cvc)
+    print(main_args.yices)
+    print(main_args.bitwuzla)
+    print(main_args.boolector)
+    '''
+
+    global USE_Z3
+    if(main_args.z3):
+        USE_Z3=True
+    global USE_MATHSAT
+    if(main_args.mathsat):
+        USE_MATHSAT=True
+    global USE_CVC
+    if(main_args.cvc):
+        USE_CVC=True
+    global USE_YICES
+    if(main_args.yices):
+        USE_YICES=True
+    global USE_BITWUZLA
+    if(main_args.bitwuzla):
+        USE_BITWUZLA=True
+    global USE_BOOLECTOR
+    if(main_args.boolector):
+        USE_BOOLECTOR=True
+
     if main_args.file:
         gen_one_test(regression_path, main_args.file, main_args.tool, main_args.modes)
     else:
         create_tests(main_args.tool, regression_path, main_args.mode)
 
+def run_tests():
+    unittest.main(argv=[sys.argv[0], "-v"])
+
 def main():
     _arg_parsing()
     suite = unittest.TestLoader().loadTestsFromTestCase(RegressionBase)
-    unittest.main(argv=[sys.argv[0], "-v"])
+    run_tests()
 
 if __name__ == "__main__":
     main()

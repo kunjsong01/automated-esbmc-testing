@@ -12,6 +12,7 @@ import re
 import xml.etree.ElementTree as ET
 import time
 import shlex
+from resource import *
 #####################
 # Testing Tool
 #####################
@@ -313,7 +314,11 @@ class Executor:
         return stdout, stderr
         '''
         try:
+            # use subprocess.run because we want to wait for it to finish
             p = subprocess.run(cmd, stdout=PIPE, stderr=PIPE, timeout=self.timeout);
+            # get the RSS (resident set size) of the children who have been terminated
+            # see https://docs.python.org/3/library/resource.html for more details
+            print(getrusage(RUSAGE_CHILDREN).ru_maxrss)
         except subprocess.CalledProcessError:
             return None, None
         return p.stdout, p.stderr

@@ -317,8 +317,11 @@ class Executor:
             # use subprocess.run because we want to wait for the subprocess to finish
             p = subprocess.run(cmd, stdout=PIPE, stderr=PIPE, timeout=self.timeout);
             # get the RSS (resident set size) of the subprocess who have been terminated
+            # the result is in kilobytes, save the output in a tmp.log and then use the command below
+            # to get the total maximum RSS:
+            #   egrep "mem_usage=[0-9]+" tmp.log -o | cut -d'=' -f2 | paste -sd+ - | bc
             # see https://docs.python.org/3/library/resource.html for more details
-            print(getrusage(RUSAGE_CHILDREN).ru_maxrss)
+            print("@@ mem_usage={0} for cmd: {1}".format(getrusage(RUSAGE_CHILDREN).ru_maxrss, cmd))
         except subprocess.CalledProcessError:
             return None, None
         return p.stdout, p.stderr
